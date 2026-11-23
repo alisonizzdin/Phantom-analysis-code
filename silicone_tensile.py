@@ -11,7 +11,7 @@ What it does, for every sample, the same way:
   5. calculates Young's modulus (10-50 % strain), UTS, strain at break, stress at 100 % strain
 Then for each material it makes mean +/- SD curves, bar charts and statistics.
 
-FOLDERS (keep your own folder and file names - nothing needs renaming):
+FOLDERS:
   silicone_tensile.py
   raw/
     silicone/
@@ -40,15 +40,15 @@ import matplotlib.pyplot as plt
 from scipy import stats
 
 # =============================================================================
-# SETTINGS - the only part you should need to edit
+# SETTINGS
 # =============================================================================
 HERE = Path(__file__).resolve().parent
 DATA_FOLDER = HERE / "raw" / "silicone"      # one sub-folder per material
 RESULTS_FOLDER = HERE / "results_silicone"
 EXCLUSIONS_FILE = HERE / "silicone_exclusions.csv"   # created automatically
 
-# Folder name -> label used in tables and figures (also fixes the typo in the folder name).
-# Order here = order in figures. Folders not listed are still analysed, using the folder name.
+# Folder name -> label used in tables and figures.
+# Order here = order in figures.
 LABELS = {
     "Silicone 00-10":             "00-10",
     "Silicone 00-20":             "00-20",
