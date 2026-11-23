@@ -55,7 +55,6 @@ DATA_CANDIDATES = [HERE / "raw" / "tackiness test", HERE / "raw" / "tack_test", 
 RESULTS_FOLDER = HERE / "results_tack"
 EXCLUSIONS_FILE = HERE / "tack_exclusions.csv"
 
-# >>> FILL IN: which wax each letter is. These names appear in every table and figure. <<<
 WAX_NAMES = {
     "A": "Wax A",
     "B": "Wax B",
