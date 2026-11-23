@@ -24,9 +24,6 @@ FOLDERS (keep your own names - solvent and time are read from the folder name):
       ...
       White spirit 24h/
 
-RUN (VS Code terminal):
-  python solvent_tensile.py --check
-  python solvent_tensile.py
 """
 
 import argparse
@@ -277,7 +274,7 @@ def run():
     dunnett_p = {}
     lines = []
     with warnings.catch_warnings():
-        warnings.simplefilter("ignore")      # harmless numerical warnings (e.g. a measure missing in some groups)
+        warnings.simplefilter("ignore")
         for m, label in METRICS.items():
             lines.append(f"=== {label} ===")
             for lab in order:
