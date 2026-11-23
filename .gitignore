@@ -1,0 +1,20 @@
+# ---- Never upload data or results ----
+raw/
+results_*/
+docs/
+*.csv
+*.txt
+*.mat
+*.xlsx
+*.xls
+*.docx
+*.pdf
+*.png
+*.jpg
+*.jpeg
+
+# ---- Mac and Python clutter ----
+.DS_Store
+__pycache__/
+*.pyc
+.vscode/
